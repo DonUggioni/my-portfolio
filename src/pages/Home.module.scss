@@ -1,9 +1,128 @@
+@use '../sass/variables';
+
 .section_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)),
-    url('../assets/images/brick-wall-compressed.jpg');
+    url('../assets/images/brick-wall-2.jpg');
   background-size: cover;
   height: 100vh;
   -webkit-box-shadow: inset 0px 0px 100px 200px rgba(0, 0, 0, 1);
   -moz-box-shadow: inset 0px 0px 100px 200px rgba(0, 0, 0, 1);
   box-shadow: inset 0px 0px 100px 200px rgba(0, 0, 0, 1);
+}
+
+.heading {
+  &__primary {
+    font-family: variables.$ff-softBox;
+    font-size: variables.$h1-l;
+    font-weight: 400;
+    color: variables.$neon-red;
+    letter-spacing: 2rem;
+    text-shadow: 0 0 7px variables.$neon-red, 0 0 10px variables.$neon-red,
+      0 0 21px variables.$neon-red-shade, 0 0 42px rgb(190, 16, 0),
+      0 0 82px rgb(173, 15, 1), 0 0 92px rgb(163, 14, 0),
+      0 0 120px rgb(150, 13, 0), 0 0 150px rgba(150, 12, 0, 0.764),
+      0 5px 150px rgba(148, 142, 35, 0.59);
+    animation: flicker 6s infinite alternate;
+  }
+
+  &__secondary {
+    font-family: variables.$ff-flott;
+    font-size: variables.$h3-l;
+    color: variables.$neon-yellow;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    text-shadow: 0 0 7px variables.$neon-yellow, 0 0 10px variables.$neon-yellow,
+      0 0 21px variables.$neon-yellow-shade, 0 0 42px rgb(204, 196, 46),
+      0 0 72px rgb(196, 189, 44), 0 0 80px rgb(180, 173, 41),
+      0 0 100px rgb(164, 158, 39), 0 0 110px rgba(148, 142, 35, 0.59),
+      0 -5px 150px rgba(150, 12, 0, 0.544);
+  }
+
+  & span {
+    animation: onAndOff 2.5s infinite alternate;
+  }
+}
+
+@keyframes onAndOff {
+  61%,
+  90%,
+  100% {
+    text-shadow: 0 0 7px variables.$neon-yellow, 0 0 10px variables.$neon-yellow,
+      0 0 21px variables.$neon-yellow-shade, 0 0 42px rgb(204, 196, 46),
+      0 0 72px rgb(196, 189, 44), 0 0 80px rgb(180, 173, 41),
+      0 0 100px rgb(164, 158, 39), 0 0 110px rgba(148, 142, 35, 0.59),
+      0 -5px 150px rgba(150, 12, 0, 0.544);
+  }
+
+  0%,
+  10%,
+  20%,
+  30%,
+  40%,
+  50%,
+  60% {
+    text-shadow: none;
+  }
+}
+
+@keyframes flicker {
+  0%,
+  3%,
+  5%,
+  8%,
+  10%,
+  12%,
+  15%,
+  18%,
+  21%,
+  22%,
+  25%,
+  27%,
+  29%,
+  32%,
+  35%,
+  38%,
+  40%,
+  49%,
+  50%,
+  52%,
+  57%,
+  60%,
+  65%,
+  70%,
+  74%,
+  75%,
+  78%,
+  82%,
+  86%,
+  90%,
+  93%,
+  96%,
+  100% {
+    text-shadow: 0 0 7px variables.$neon-red, 0 0 10px variables.$neon-red,
+      0 0 21px variables.$neon-red-shade, 0 0 42px rgb(190, 16, 0),
+      0 0 82px rgb(173, 15, 1), 0 0 92px rgb(163, 14, 0),
+      0 0 120px rgb(150, 13, 0), 0 0 150px rgba(150, 12, 0, 0.764),
+      0 5px 150px rgba(148, 142, 35, 0.59);
+  }
+
+  20%,
+  23%,
+  51% {
+    text-shadow: none;
+  }
+}
+
+.copy_text {
+  font-size: variables.$text-l;
+  color: variables.$neon-yellow;
+  letter-spacing: 0.1rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
 }

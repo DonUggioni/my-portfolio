@@ -1,9 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import classes from './Home.module.scss';
 
 function Home() {
-  return <div className={classes.section_wrapper}>Home</div>;
+  const [year, setYear] = useState();
+  const date = new Date();
+
+  useEffect(() => {
+    setYear(() => date.getFullYear());
+  }, []);
+
+  return (
+    <div className={classes.section_wrapper}>
+      <div className={classes.heading}>
+        <h1 className={classes.heading__primary}>Welcome</h1>
+        <h3 className={classes.heading__secondary}>
+          to my <span>portfolio</span>
+        </h3>
+        <p className={classes.copy_text}>
+          All rights reserved ©Renan Tiscoski {year}
+        </p>
+      </div>
+    </div>
+  );
 }
 
 export default Home;

@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Flott;
+  src: url('./assets/font-faces/Flottflott.ttf');
+}
+
+@font-face {
+  font-family: SoftBox;
+  src: url('./assets/font-faces/SOFTBOX.otf');
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  font-family: SoftBox;
+}
