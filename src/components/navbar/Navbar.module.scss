@@ -1,0 +1,50 @@
+@use '../../sass/variables';
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 3.6rem;
+
+  .img_container {
+    max-width: 8rem;
+    max-height: 8rem;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+    list-style: none;
+  }
+
+  &__item {
+    font-size: variables.$h5-l;
+    color: variables.$neon-light-blue;
+    letter-spacing: 0.15rem;
+
+    & a {
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.1s;
+    }
+
+    & a:hover {
+      text-shadow: 0 0 13px variables.$neon-light-blue,
+        0 0 23px variables.$neon-light-blue, 0 0 40px variables.$neon-light-blue,
+        0 0 60px rgb(51, 220, 242), 0 0 80px rgb(42, 197, 218),
+        0 0 100px rgba(37, 170, 188, 0.942), 0 0 120px rgba(37, 170, 188, 0.581);
+
+      animation: flicker 4s alternate;
+    }
+  }
+}

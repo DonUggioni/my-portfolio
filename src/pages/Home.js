@@ -4,11 +4,11 @@ import classes from './Home.module.scss';
 
 function Home() {
   const [year, setYear] = useState();
-  const date = new Date();
 
   useEffect(() => {
+    const date = new Date();
     setYear(() => date.getFullYear());
-  }, []);
+  }, [year]);
 
   return (
     <div className={classes.section_wrapper}>
