@@ -3,7 +3,7 @@
     61%,
     90%,
     100% {
-      text-shadow: 0 0 7px variables.$neon-yellow,
+      text-shadow: 0 0 2px rgba(0, 0, 0, 0.573), 0 0 7px variables.$neon-yellow,
         0 0 10px variables.$neon-yellow, 0 0 21px variables.$neon-yellow-shade,
         0 0 42px rgb(204, 196, 46), 0 0 72px rgb(196, 189, 44),
         0 0 80px rgb(180, 173, 41), 0 0 100px rgb(164, 158, 39),
@@ -57,11 +57,11 @@
     93%,
     96%,
     100% {
-      text-shadow: 0 0 7px variables.$neon-red, 0 0 10px variables.$neon-red,
-        0 0 21px variables.$neon-red-shade, 0 0 42px rgb(190, 16, 0),
-        0 0 82px rgb(173, 15, 1), 0 0 92px rgb(163, 14, 0),
-        0 0 120px rgb(150, 13, 0), 0 0 150px rgba(150, 12, 0, 0.764),
-        0 5px 150px rgba(148, 142, 35, 0.59);
+      text-shadow: 0 0 3px rgba(0, 0, 0, 0.499), 0 0 7px variables.$neon-red,
+        0 0 10px variables.$neon-red, 0 0 21px variables.$neon-red-shade,
+        0 0 42px rgb(190, 16, 0), 0 0 82px rgb(173, 15, 1),
+        0 0 92px rgb(163, 14, 0), 0 0 120px rgb(150, 13, 0),
+        0 0 150px rgba(150, 12, 0, 0.764), 0 5px 150px rgba(148, 142, 35, 0.59);
     }
 
     20%,
