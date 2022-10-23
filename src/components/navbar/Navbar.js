@@ -14,13 +14,28 @@ function Navbar() {
       </div>
       <ul className={classes.nav__list}>
         <li className={classes.nav__item}>
-          <NavLink to={'/about'}>About</NavLink>
+          <NavLink
+            to={'/about'}
+            className={({ isActive }) => (isActive ? classes.active : '')}
+          >
+            About
+          </NavLink>
         </li>
         <li className={classes.nav__item}>
-          <NavLink to={'/portfolio'}>Portfolio</NavLink>
+          <NavLink
+            to={'/portfolio'}
+            className={({ isActive }) => (isActive ? classes.active : '')}
+          >
+            Portfolio
+          </NavLink>
         </li>
         <li className={classes.nav__item}>
-          <NavLink to={'/contact'}>Contact</NavLink>
+          <NavLink
+            to={'/contact'}
+            className={({ isActive }) => (isActive ? classes.active : '')}
+          >
+            Contact
+          </NavLink>
         </li>
       </ul>
     </nav>
