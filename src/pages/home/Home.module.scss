@@ -2,6 +2,7 @@
 @import '../../sass/animations';
 
 .section_wrapper {
+  height: calc(100vh - 9rem);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,7 +10,6 @@
   background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)),
     url('../../assets/images/brick-wall-2.jpg');
   background-size: cover;
-  height: 100vh;
   -webkit-box-shadow: inset 0px 0px 100px 200px rgba(0, 0, 0, 1);
   -moz-box-shadow: inset 0px 0px 100px 200px rgba(0, 0, 0, 1);
   box-shadow: inset 0px 0px 100px 200px rgba(0, 0, 0, 1);

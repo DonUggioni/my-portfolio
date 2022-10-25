@@ -2,7 +2,7 @@
 @import '../../sass/animations';
 
 .section_wrapper {
-  height: 100vh;
+  height: calc(100vh - 9rem);
   display: flex;
   align-items: center;
   justify-content: center;

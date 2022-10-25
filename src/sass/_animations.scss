@@ -1,5 +1,6 @@
 @mixin onAndOff {
   @keyframes onAndOff {
+    51%,
     61%,
     90%,
     100% {
@@ -15,8 +16,7 @@
     20%,
     30%,
     40%,
-    50%,
-    60% {
+    50% {
       text-shadow: none;
     }
   }
