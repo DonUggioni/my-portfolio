@@ -19,6 +19,10 @@ function Portfolio() {
     setIndex(currIndex);
   }
 
+  function closeModalHandler() {
+    setIsActive(false);
+  }
+
   console.log(index, isActive);
 
   return (
@@ -58,6 +62,7 @@ function Portfolio() {
           description={Data[index].description}
           repoLink={Data[index].githubLink}
           liveLink={Data[index].liveLink}
+          onCloseModal={closeModalHandler}
         />
       )}
     </main>

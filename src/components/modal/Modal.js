@@ -6,6 +6,12 @@ import classes from './Modal.module.scss';
 function Modal(props) {
   return (
     <div className={classes.modal}>
+      <button
+        onClick={props.onCloseModal}
+        className={classes['modal_close-btn']}
+      >
+        Close
+      </button>
       <div className={classes['modal_inner-wrapper']}>
         <div className={classes['modal_image-container']}>
           <img
@@ -19,12 +25,12 @@ function Modal(props) {
           <p className={classes.modal_description}>{props.description}</p>
         </div>
         <div className={classes.buttons_container}>
-          <Button>
+          <Button className="button_small-font">
             <a href={props.repoLink} className={classes.link}>
               Repositorie
             </a>
           </Button>
-          <Button>
+          <Button className="button_small-font">
             <a href={props.liveLink} className={classes.link}>
               Live Website
             </a>

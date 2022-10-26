@@ -27,3 +27,15 @@
   padding: 1.6rem 4.8rem;
   cursor: pointer;
 }
+
+.button_small-font {
+  background-color: transparent;
+  border: none;
+  color: variables.$neon-yellow;
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+  font-family: variables.$ff-flott;
+  padding: 1.6rem 4.8rem;
+  cursor: pointer;
+  animation: onAndOff 4s infinite;
+}
