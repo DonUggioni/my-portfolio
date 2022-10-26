@@ -1,9 +1,11 @@
 @use '../../sass/variables';
+@import '../../sass/mixins';
 
 .card {
   max-width: 84rem;
   display: grid;
-  gap: 2.4rem;
+  justify-items: center;
+  gap: 3.6rem;
   border: 2px solid variables.$neon-dark-blue;
   padding: 4.8rem 7.2rem;
   box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff,
@@ -11,6 +13,7 @@
     0 0 2.8rem variables.$neon-dark-blue,
     inset 0 0 1.3rem variables.$neon-dark-blue;
   border-radius: 3rem;
+  overflow: hidden;
 
   &_image-container {
     max-width: 58rem;
@@ -32,12 +35,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2.4rem;
 
     & .heading {
       font-size: variables.$h3-l;
       font-family: variables.$ff-softBox;
       color: variables.$neon-red;
       letter-spacing: 0.6rem;
+      @include redNeonEffect;
     }
   }
 }

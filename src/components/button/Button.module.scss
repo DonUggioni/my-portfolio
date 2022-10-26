@@ -1,0 +1,29 @@
+@use '../../sass/variables';
+@import '../../sass/mixins';
+@import '../../sass/animations';
+
+@include onAndOff;
+
+.button {
+  background-color: transparent;
+  border: none;
+  color: variables.$neon-yellow;
+  font-size: variables.$h5-l;
+  letter-spacing: 0.4rem;
+  font-family: variables.$ff-flott;
+  padding: 1.6rem 4.8rem;
+  cursor: pointer;
+  animation: onAndOff 4s infinite;
+}
+
+.button_border {
+  border: 2px solid variables.$neon-dark-red;
+  border-radius: 1.2rem;
+  background-color: transparent;
+  color: variables.$neon-yellow;
+  font-size: variables.$h5-l;
+  letter-spacing: 0.4rem;
+  font-family: variables.$ff-flott;
+  padding: 1.6rem 4.8rem;
+  cursor: pointer;
+}
