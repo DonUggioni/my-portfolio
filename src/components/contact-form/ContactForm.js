@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../button/Button';
+import Footer from '../footer/Footer';
 
 import classes from './ContactForm.module.scss';
 
@@ -23,6 +24,8 @@ function ContactForm() {
           </Button>
         </form>
       </div>
+
+      <Footer />
     </section>
   );
 }
