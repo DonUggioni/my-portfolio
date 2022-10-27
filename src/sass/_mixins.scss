@@ -21,9 +21,23 @@
     0 0 100px rgb(15, 25, 67), 0 0 110px rgba(30, 47, 127, 0.5);
 }
 
+@mixin lightBlueNeonTextEffetct {
+  text-shadow: 0 0 13px variables.$neon-light-blue,
+    0 0 23px variables.$neon-light-blue, 0 0 40px variables.$neon-light-blue,
+    0 0 60px rgb(51, 220, 242), 0 0 80px rgb(42, 197, 218),
+    0 0 100px rgba(37, 170, 188, 0.942), 0 0 120px rgba(37, 170, 188, 0.581);
+}
+
 @mixin redBoxShadow {
   box-shadow: 0 0 0.2rem variables.$neon-red-shade,
     0 0 0.2rem variables.$neon-red-shade, 0 0 2rem variables.$neon-dark-red,
     0 0 0.8rem variables.$neon-dark-red, 0 0 2.8rem variables.$neon-dark-red,
     inset 0 0 1.3rem variables.$neon-dark-red;
+}
+
+@mixin darkBlueBoxShadow {
+  box-shadow: 0 0 0.2rem variables.$neon-light-blue,
+    0 0 0.2rem variables.$neon-light-blue, 0 0 2rem variables.$neon-dark-blue,
+    0 0 0.8rem variables.$neon-dark-blue, 0 0 2.8rem variables.$neon-dark-blue,
+    inset 0 0 0.8rem variables.$neon-dark-blue;
 }
