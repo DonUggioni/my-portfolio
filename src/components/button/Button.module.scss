@@ -26,6 +26,12 @@
   font-family: variables.$ff-flott;
   padding: 1.6rem 4.8rem;
   cursor: pointer;
+  transition: all 0.1s;
+}
+
+.button_border:hover {
+  @include yellowNeonEffect;
+  @include redBoxShadow;
 }
 
 .button_small-font {

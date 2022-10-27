@@ -12,3 +12,18 @@
     0 0 80px rgb(180, 173, 41), 0 0 100px rgb(164, 158, 39),
     0 0 110px rgba(148, 142, 35, 0.59);
 }
+
+@mixin darkBlueNeonEffect {
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.2),
+    0 0 7px variables.$neon-dark-blue, 0 0 10px variables.$neon-dark-blue,
+    0 0 21px variables.$neon-dark-blue, 0 0 42px rgb(24, 39, 103),
+    0 0 72px rgb(21, 33, 88), 0 0 80px rgb(18, 28, 76),
+    0 0 100px rgb(15, 25, 67), 0 0 110px rgba(30, 47, 127, 0.5);
+}
+
+@mixin redBoxShadow {
+  box-shadow: 0 0 0.2rem variables.$neon-red-shade,
+    0 0 0.2rem variables.$neon-red-shade, 0 0 2rem variables.$neon-dark-red,
+    0 0 0.8rem variables.$neon-dark-red, 0 0 2.8rem variables.$neon-dark-red,
+    inset 0 0 1.3rem variables.$neon-dark-red;
+}

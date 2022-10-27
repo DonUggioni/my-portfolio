@@ -61,7 +61,7 @@ function Portfolio() {
           title={Data[index].title}
           description={Data[index].description}
           repoLink={Data[index].githubLink}
-          liveLink={Data[index].liveLink}
+          liveLink={Data[index].liveWebsite}
           onCloseModal={closeModalHandler}
         />
       )}

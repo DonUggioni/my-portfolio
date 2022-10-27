@@ -17,9 +17,7 @@ function Home() {
         <h3 className={classes.heading__secondary}>
           to my <span>portfolio</span>
         </h3>
-        <p className={classes.copy_text}>
-          All rights reserved ©Renan Tiscoski {year}
-        </p>
+        <p className={classes.copy_text}>© Renan Tiscoski {year}</p>
       </div>
     </div>
   );

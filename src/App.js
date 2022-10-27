@@ -5,6 +5,7 @@ import About from './pages/about/About';
 
 import './App.css';
 import Portfolio from './pages/portfolio/Portfolio';
+import ContactForm from './components/contact-form/ContactForm';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<ContactForm />} />
       </Routes>
     </div>
   );
