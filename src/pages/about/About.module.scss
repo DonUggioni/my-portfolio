@@ -1,5 +1,6 @@
 @use '../../sass/variables';
 @import '../../sass/animations';
+@import '../../sass/mixins';
 
 .section_wrapper {
   height: calc(100vh - 9rem);
@@ -74,5 +75,24 @@
         line-height: 1.5;
       }
     }
+  }
+
+  .socials_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .social_link,
+  .social_link:link,
+  .social_link:visited {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.1s;
+  }
+
+  .social_link:hover {
+    @include yellowNeonEffect;
   }
 }

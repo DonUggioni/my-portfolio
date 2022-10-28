@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Button from '../../components/button/Button';
+
 import DUMMY_IMG from '../../assets/images/dummy_about_img.jpg';
 import classes from './About.module.scss';
 
@@ -23,6 +25,32 @@ function About() {
             sed quia non numquam eius modi tempora incidunt ut labore et dolore
             magnam aliquam quaerat voluptatem. "
           </p>
+          <div className={classes.socials_container}>
+            <Button className="button_small-font-static">
+              <a
+                href="https://www.linkedin.com/in/renan-tiscoski/"
+                className={classes.social_link}
+              >
+                LinkedIn
+              </a>
+            </Button>
+            <Button className="button_small-font-static">
+              <a
+                href="https://github.com/DonUggioni"
+                className={classes.social_link}
+              >
+                Github
+              </a>
+            </Button>
+            <Button className="button_small-font-static">
+              <a
+                href="https://www.frontendmentor.io/profile/DonUggioni"
+                className={classes.social_link}
+              >
+                Frontend Mentor
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
