@@ -17,6 +17,13 @@
 
 .heading {
   @include flicker;
+  max-width: 50rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
   &__primary {
     font-family: variables.$ff-softBox;
     font-size: variables.$h1-l;
@@ -24,6 +31,10 @@
     color: variables.$neon-red;
     letter-spacing: 2rem;
     animation: flicker 6s infinite alternate;
+
+    @media screen and (max-width: 554px) {
+      font-size: variables.$h1-m;
+    }
   }
 
   &__secondary {
@@ -37,6 +48,10 @@
       0 0 42px rgb(204, 196, 46), 0 0 72px rgb(196, 189, 44),
       0 0 80px rgb(180, 173, 41), 0 0 100px rgb(164, 158, 39),
       0 0 110px rgba(148, 142, 35, 0.59), 0 -5px 150px rgba(150, 12, 0, 0.544);
+
+    @media screen and (max-width: 554px) {
+      font-size: variables.$h3-m;
+    }
   }
 
   @include onAndOff;
