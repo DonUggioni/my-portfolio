@@ -52,7 +52,7 @@ export const Data = [
     image: tipCalculatorImg,
     title: 'Tip Calculator',
     description:
-      'The check comes in, they ask you to do the math and split the bill.. but nobody knows you suck at math! Good thing you have this great app ready at your fingertips! Built entirely with HTML5, SASS and vanilla JavaScript, it will solve all your restaurant bill splitting problems!',
+      'The check comes in, they ask you to do the math and split the bill.. but nobody knows you suck at math! Good thing you have this great app ready at your fingertips! Built entirely with HTML5, CSS3 and vanilla JavaScript, it will solve all your restaurant bill splitting problems!',
     githubLink: 'https://github.com/DonUggioni/tip-calculator-app-main',
     liveWebsite: 'https://tip-calculator-by-renan.netlify.app',
   },
