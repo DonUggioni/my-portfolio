@@ -24,7 +24,6 @@ function ContactForm() {
           </Button>
         </form>
       </div>
-
       <Footer />
     </section>
   );
