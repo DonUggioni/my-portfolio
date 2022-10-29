@@ -2,7 +2,6 @@
 @import '../../sass/mixins';
 
 .portfolio_wrapper {
-  // height: calc(100vh - 9rem);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,7 +15,7 @@
 
 .swiper-wrapper {
   max-width: 75vw;
-  padding: 5rem 0;
+  padding: 8rem 0;
 }
 
 .swiper-slide {

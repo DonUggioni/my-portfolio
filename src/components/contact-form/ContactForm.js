@@ -2,7 +2,6 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 import Button from '../button/Button';
-import Footer from '../footer/Footer';
 
 import classes from './ContactForm.module.scss';
 
@@ -60,7 +59,6 @@ function ContactForm() {
         {messageSent && <Message message={'Thank you!'} />}
         {errorMessage && <Message message={'Something went wrong'} />}
       </div>
-      <Footer />
     </section>
   );
 }
