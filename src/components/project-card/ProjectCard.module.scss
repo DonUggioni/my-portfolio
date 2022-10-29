@@ -15,6 +15,10 @@
   border-radius: 3rem;
   overflow: hidden;
 
+  @media screen and (max-width: 554px) {
+    padding: 2.4rem 2.4rem;
+  }
+
   &_image-container {
     max-width: 58rem;
     border: 2px solid variables.$neon-light-blue;
@@ -43,6 +47,11 @@
       color: variables.$neon-red;
       letter-spacing: 0.6rem;
       @include redNeonEffect;
+
+      @media screen and (max-width: 554px) {
+        font-size: variables.$h3-m;
+        text-align: center;
+      }
     }
   }
 }

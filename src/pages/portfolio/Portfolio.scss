@@ -10,18 +10,23 @@
 
 .swiper {
   width: 100%;
-  padding-bottom: 10rem;
+  padding-bottom: 4rem;
 }
 
 .swiper-wrapper {
   max-width: 75vw;
   padding: 8rem 0;
+
+  @media screen and (max-width: 554px) {
+    padding: 4rem 0;
+  }
 }
 
 .swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 2.6rem;
 }
 
 .swiper-button-prev,
@@ -29,4 +34,16 @@
   color: variables.$neon-dark-red;
   padding: 0 4rem;
   @include redNeonEffect;
+
+  @media screen and (max-width: 846px) {
+    display: none;
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: variables.$neon-dark-blue;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: variables.$neon-light-blue;
 }

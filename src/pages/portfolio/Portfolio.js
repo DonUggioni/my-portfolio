@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay } from 'swiper';
+import { Navigation, Autoplay, Pagination } from 'swiper';
 import 'swiper/scss';
 import 'swiper/scss/navigation';
+import 'swiper/scss/pagination';
 
 import ProjectCard from '../../components/project-card/ProjectCard';
 import { Data } from '../../data/Data';
@@ -28,7 +29,7 @@ function Portfolio() {
   return (
     <main className="portfolio_wrapper">
       <Swiper
-        modules={[Navigation, Autoplay]}
+        modules={[Navigation, Autoplay, Pagination]}
         spaceBetween={50}
         slidesPerView={1}
         speed={1000}
