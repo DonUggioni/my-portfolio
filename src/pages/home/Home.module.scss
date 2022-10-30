@@ -35,6 +35,10 @@
     @media screen and (max-width: 554px) {
       font-size: variables.$h1-m;
     }
+
+    @media screen and (max-width: 396px) {
+      font-size: variables.$h1-s;
+    }
   }
 
   &__secondary {
@@ -51,6 +55,10 @@
 
     @media screen and (max-width: 554px) {
       font-size: variables.$h3-m;
+    }
+
+    @media screen and (max-width: 396px) {
+      font-size: variables.$h3-s;
     }
   }
 
