@@ -68,9 +68,10 @@
       outline: none;
     }
 
-    & input:focus {
-      @include darkBlueBoxShadow;
-    }
+    // & input:focus,
+    // input:focus-visible {
+    //   @include darkBlueBoxShadow;
+    // }
 
     & textarea {
       margin-bottom: 2.4rem;
@@ -84,7 +85,8 @@
       outline: none;
     }
 
-    & :focus {
+    & :focus,
+    & :focus-visible {
       @include darkBlueBoxShadow;
     }
   }
