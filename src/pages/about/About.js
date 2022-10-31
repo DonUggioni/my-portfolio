@@ -1,13 +1,20 @@
 import React from 'react';
 
 import Button from '../../components/button/Button';
+import { motion } from 'framer-motion';
 
 import DUMMY_IMG from '../../assets/images/dummy_about_img.jpg';
 import classes from './About.module.scss';
 
 function About() {
   return (
-    <section className={classes.section_wrapper}>
+    <motion.section
+      className={classes.section_wrapper}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.6 }}
+    >
       <div className={classes.info}>
         <div className={classes['info_img-container']}>
           <img className={classes.img} src={DUMMY_IMG} alt={'Renan'} />
@@ -53,7 +60,7 @@ function About() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

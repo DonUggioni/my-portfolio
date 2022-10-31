@@ -5,6 +5,8 @@ import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
 
+import { motion } from 'framer-motion';
+
 import ProjectCard from '../../components/project-card/ProjectCard';
 import { Data } from '../../data/Data';
 
@@ -27,7 +29,13 @@ function Portfolio() {
   console.log(index, isActive);
 
   return (
-    <main className="portfolio_wrapper">
+    <motion.main
+      className="portfolio_wrapper"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.6 }}
+    >
       <Swiper
         modules={[Navigation, Autoplay, Pagination]}
         spaceBetween={50}
@@ -66,7 +74,7 @@ function Portfolio() {
           onCloseModal={closeModalHandler}
         />
       )}
-    </main>
+    </motion.main>
   );
 }
 
