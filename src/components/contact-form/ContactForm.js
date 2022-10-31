@@ -44,13 +44,13 @@ function ContactForm() {
         <h3 className={classes.heading}>Contact Me</h3>
         <form className={classes.form} ref={form} onSubmit={sendEmail}>
           <label>Name</label>
-          <input type="text" name="user_name" required />
+          <input type="text" name="user_name" required tabIndex={0} />
 
           <label>Email</label>
-          <input type="email" name="user_email" required />
+          <input type="email" name="user_email" required tabIndex={1} />
 
           <label>Message</label>
-          <textarea name="message" rows="6" required />
+          <textarea name="message" rows="6" required tabIndex={2} />
 
           <Button className="button_border" type="submit">
             Submit
