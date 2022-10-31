@@ -22,7 +22,7 @@ function Navbar() {
   return (
     <nav className={classes.nav}>
       <div className={classes.img_container} onClick={closeMenu}>
-        <NavLink to="/home">
+        <NavLink to="/">
           <img src={logo} alt={'Logo'} />
         </NavLink>
       </div>
