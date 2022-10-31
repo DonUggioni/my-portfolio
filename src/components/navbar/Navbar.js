@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Turn as Hamburger, Turn } from 'hamburger-react';
+import { Turn as Hamburger } from 'hamburger-react';
 
 import logo from '../../assets/images/logo_copia.png';
 import classes from './Navbar.module.scss';
