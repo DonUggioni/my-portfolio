@@ -22,15 +22,16 @@ function About() {
         <div className={classes.info_content}>
           <h2>About me</h2>
           <p>
-            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore
-            magnam aliquam quaerat voluptatem. "
+            My name is Renan. I build stuff for the internet. I am currently
+            based in Portugal but I call myself a citizen of the world since I
+            have lived in a few different places of our planet. I got the coding
+            bug (no pun intended) around 2020 when I started exploring the tech
+            world. Since then, I started to learn how to code on and off until
+            February 2022, when I started taking it seriously and decided that I
+            wanted to do this for a living. I'm also a musician and part-time
+            geek and gamer. The main technologies I use at the moment are HTML5,
+            CSS3, SASS and React but I'm always willing to learn new things and
+            explore different paths.
           </p>
           <div className={classes.socials_container}>
             <Button className="button_small-font-static">
