@@ -4,7 +4,6 @@ import Button from '../../components/button/Button';
 import { motion } from 'framer-motion';
 
 import my_own_pic from '../../assets/images/renan_copia.jpg';
-import DUMMY_IMG from '../../assets/images/dummy_about_img.jpg';
 import classes from './About.module.scss';
 
 function About() {
@@ -31,8 +30,8 @@ function About() {
             February 2022, when I started taking it seriously and decided that I
             wanted to do this for a living. I'm also a musician and part-time
             geek and gamer. The main technologies I use at the moment are HTML5,
-            CSS3, SASS and React but I'm always willing to learn new things and
-            explore different paths.
+            CSS3, SASS, JavaScript and React but I'm always willing to learn new
+            things and explore different paths.
           </p>
           <div className={classes.socials_container}>
             <Button className="button_small-font-static">
