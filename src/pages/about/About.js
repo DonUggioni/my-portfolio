@@ -3,6 +3,7 @@ import React from 'react';
 import Button from '../../components/button/Button';
 import { motion } from 'framer-motion';
 
+import my_own_pic from '../../assets/images/renan_copia.jpg';
 import DUMMY_IMG from '../../assets/images/dummy_about_img.jpg';
 import classes from './About.module.scss';
 
@@ -17,7 +18,7 @@ function About() {
     >
       <div className={classes.info}>
         <div className={classes['info_img-container']}>
-          <img className={classes.img} src={DUMMY_IMG} alt={'Renan'} />
+          <img className={classes.img} src={my_own_pic} alt={'Renan'} />
         </div>
         <div className={classes.info_content}>
           <h2>About me</h2>
