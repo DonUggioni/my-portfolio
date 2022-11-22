@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay, Pagination } from 'swiper';
 import 'swiper/scss';
@@ -11,23 +11,8 @@ import ProjectCard from '../../components/project-card/ProjectCard';
 import { Data } from '../../data/Data';
 
 import './Portfolio.scss';
-import Modal from '../../components/modal/Modal';
 
 function Portfolio() {
-  const [isActive, setIsActive] = useState(false);
-  const [index, setIndex] = useState(null);
-
-  function openModalHandler(currIndex) {
-    setIsActive(true);
-    setIndex(currIndex);
-  }
-
-  function closeModalHandler() {
-    setIsActive(false);
-  }
-
-  console.log(index, isActive);
-
   return (
     <motion.main
       className="portfolio_wrapper"
@@ -60,24 +45,11 @@ function Portfolio() {
                 description={item.description}
                 repoLink={item.githubLink}
                 liveLink={item.liveWebsite}
-                onCloseModal={closeModalHandler}
               />
             </SwiperSlide>
           );
         })}
       </Swiper>
-
-      {isActive && (
-        <Modal
-          imgSrc={Data[index].image}
-          alt={`Project screenshot number `[index]}
-          title={Data[index].title}
-          description={Data[index].description}
-          repoLink={Data[index].githubLink}
-          liveLink={Data[index].liveWebsite}
-          onCloseModal={closeModalHandler}
-        />
-      )}
     </motion.main>
   );
 }
