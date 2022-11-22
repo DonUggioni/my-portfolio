@@ -7,12 +7,6 @@ function Modal(props) {
   return (
     <div className={classes.modal}>
       <div className={classes['modal_inner-wrapper']}>
-        <button
-          onClick={props.onCloseModal}
-          className={classes['modal_close-btn']}
-        >
-          Close
-        </button>
         <div className={classes['modal_image-container']}>
           <img
             className={classes.modal_img}

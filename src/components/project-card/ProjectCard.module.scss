@@ -1,26 +1,37 @@
 @use '../../sass/variables';
 @import '../../sass/mixins';
 
-.card {
-  max-width: 84rem;
-  display: grid;
-  justify-items: center;
-  gap: 3.6rem;
-  border: 2px solid variables.$neon-dark-blue;
-  padding: 4.8rem 7.2rem;
-  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff,
-    0 0 2rem variables.$neon-dark-blue, 0 0 0.8rem variables.$neon-dark-blue,
-    0 0 2.8rem variables.$neon-dark-blue,
-    inset 0 0 1.3rem variables.$neon-dark-blue;
-  border-radius: 3rem;
-  overflow: hidden;
+.projectCard {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // padding: 4.6rem;
+  z-index: 5;
 
   @media screen and (max-width: 554px) {
-    padding: 2.4rem 2.4rem;
+    padding: 9.6rem 2.4rem;
+  }
+
+  &_inner-wrapper {
+    border: 2px solid variables.$neon-dark-blue;
+    padding: 3.6rem 4.8rem;
+    box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff,
+      0 0 2rem variables.$neon-dark-blue, 0 0 0.8rem variables.$neon-dark-blue,
+      0 0 2.8rem variables.$neon-dark-blue,
+      inset 0 0 1.3rem variables.$neon-dark-blue;
+    border-radius: 3rem;
+    position: relative;
+
+    @media screen and (max-width: 554px) {
+      padding: 2.4rem;
+      width: 100vw;
+    }
   }
 
   &_image-container {
-    max-width: 58rem;
+    max-width: 50rem;
     border: 2px solid variables.$neon-light-blue;
     padding: 1.8rem;
     border-radius: 2rem;
@@ -29,29 +40,60 @@
       0 0 2.8rem variables.$neon-light-blue,
       inset 0 0 1.3rem variables.$neon-light-blue;
 
-    & .image {
-      width: 100%;
-      border-radius: 1.2rem;
+    @media screen and (max-width: 554px) {
+      max-width: 100%;
     }
   }
 
-  &_content {
+  &_img {
+    width: 100%;
+    border-radius: 1.2rem;
+  }
+
+  &_description-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2.4rem;
+    justify-content: center;
+    max-width: 50rem;
+    gap: 3.6rem;
+  }
 
-    & .heading {
-      font-size: variables.$h3-l;
-      font-family: variables.$ff-softBox;
-      color: variables.$neon-red;
-      letter-spacing: 0.6rem;
-      @include redNeonEffect;
+  &_heading {
+    color: variables.$neon-red;
+    font-size: variables.$h3-l;
+    margin-top: 1.8rem;
+    @include redNeonEffect;
 
-      @media screen and (max-width: 554px) {
-        font-size: variables.$h3-m;
-        text-align: center;
-      }
+    @media screen and (max-width: 554px) {
+      font-size: variables.$h3-m;
     }
+  }
+
+  &_description {
+    font-size: 1.6rem;
+    color: variables.$grey-900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    text-align: center;
+    line-height: 1.6;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2.4rem;
+
+    @media screen and (max-width: 554px) {
+      font-size: variables.$text-m;
+    }
+  }
+
+  .buttons_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .link,
+  .link:visited,
+  .link:link {
+    text-decoration: none;
+    color: inherit;
   }
 }
