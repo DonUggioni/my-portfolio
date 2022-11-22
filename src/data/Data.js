@@ -20,7 +20,7 @@ export const Data = [
     image: ipTrackerImg,
     title: 'IP Tracker',
     description:
-      'Finally, a website that can help you track down that annoying kid that keeps threatening you in an online game! This website built with React and fetching data from an API, will fulfill all your stalking needs!',
+      'Finally, a website that can help you track down that annoying kid that keeps threatening you in an online game! This website built with React and fetching data from an API, will fulfill all your stalking needs! ',
     githubLink: 'https://github.com/DonUggioni/ip-tracker',
     liveWebsite: 'https://ip-tracker-project.netlify.app',
   },

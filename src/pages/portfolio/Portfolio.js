@@ -54,9 +54,13 @@ function Portfolio() {
           return (
             <SwiperSlide key={index}>
               <ProjectCard
-                src={item.image}
-                heading={item.title}
-                clickHandler={() => openModalHandler(index)}
+                imgSrc={item.image}
+                alt={`Project screenshot number `[index]}
+                title={item.title}
+                description={item.description}
+                repoLink={item.githubLink}
+                liveLink={item.liveWebsite}
+                onCloseModal={closeModalHandler}
               />
             </SwiperSlide>
           );

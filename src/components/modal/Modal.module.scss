@@ -2,9 +2,6 @@
 @import '../../sass/mixins';
 
 .modal {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 8);
   display: flex;
@@ -15,25 +12,6 @@
 
   @media screen and (max-width: 554px) {
     padding: 9.6rem 2.4rem;
-  }
-
-  &_close-btn {
-    position: absolute;
-    top: -4.8rem;
-    right: 1.2rem;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-    color: variables.$neon-dark-red;
-    font-family: inherit;
-    font-size: variables.$h5-l;
-
-    letter-spacing: 0.3rem;
-    @include redNeonEffect;
-
-    @media screen and (max-width: 554px) {
-      top: -6.2rem;
-    }
   }
 
   &_inner-wrapper {
