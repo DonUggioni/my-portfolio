@@ -17,6 +17,7 @@ function ProjectCard(props) {
         <div className={classes['projectCard_description-container']}>
           <h3 className={classes.projectCard_heading}>{props.title}</h3>
           <p className={classes.projectCard_description}>{props.description}</p>
+          <p className={classes.projectCard_keywords}>{props.keyWords}</p>
         </div>
         <div className={classes.buttons_container}>
           <Button className="button_small-font">

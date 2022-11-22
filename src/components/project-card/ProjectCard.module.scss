@@ -77,7 +77,20 @@
     text-align: center;
     line-height: 1.6;
     letter-spacing: 0.1rem;
-    margin-bottom: 2.4rem;
+
+    @media screen and (max-width: 554px) {
+      font-size: variables.$text-m;
+    }
+  }
+
+  &_keywords {
+    font-size: 1.6rem;
+    color: variables.$grey-900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    text-align: center;
+    line-height: 1.6;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3.2rem;
 
     @media screen and (max-width: 554px) {
       font-size: variables.$text-m;

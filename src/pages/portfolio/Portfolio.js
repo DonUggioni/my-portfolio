@@ -45,6 +45,7 @@ function Portfolio() {
                 description={item.description}
                 repoLink={item.githubLink}
                 liveLink={item.liveWebsite}
+                keyWords={item.keyWords}
               />
             </SwiperSlide>
           );
