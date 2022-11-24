@@ -58,6 +58,7 @@
     color: variables.$neon-red;
     font-size: variables.$h3-l;
     margin-top: 1.8rem;
+    text-align: center;
     @include redNeonEffect;
 
     @media screen and (max-width: 554px) {

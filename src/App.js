@@ -4,7 +4,6 @@ import Navbar from './components/navbar/Navbar';
 import About from './pages/about/About';
 import { AnimatePresence } from 'framer-motion';
 
-import './App.css';
 import Portfolio from './pages/portfolio/Portfolio';
 import Contact from './pages/contact/Contact';
 
